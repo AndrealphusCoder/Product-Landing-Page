@@ -1,0 +1,212 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  position: sticky;
+  top: 0;
+  height: 80px;
+  background-color: white;
+
+  box-shadow: whitesmoke 2px 2px 2px;
+  display: flex;
+}
+
+header img {
+  height: 60px;
+  width: 300px;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+header nav {
+  width: 80%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+header nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  padding: 0px 50px;
+  line-height: 84px;
+}
+header nav a:hover {
+  color: goldenrod;
+}
+
+/* FORM STYLES */
+
+form {
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+}
+form h1 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+form input {
+  display: block;
+  margin: 20px auto;
+}
+
+form input[type="email"] {
+  width: 70%;
+  padding: 5px;
+  font-size: 15px;
+}
+
+form input[type="submit"] {
+  background-color: goldenrod;
+  padding: 6px;
+  font-weight: bolder;
+  font-size: 16px;
+  border: none;
+  box-shadow: 2px 2px 2px;
+}
+
+form input[type="submit"]:hover {
+  background-color: rgb(211, 137, 0);
+  cursor: pointer;
+}
+
+/* features */
+#features {
+  width: 60%;
+  margin: 50px auto;
+}
+#features .content {
+  display: flex;
+  margin: 30px 0px;
+}
+#features .content .icon {
+  width: 10%;
+  font-size: 35px;
+  color: goldenrod;
+}
+#features .content .desc {
+  width: 90%;
+}
+#features .content .desc h2 {
+  font-size: 27px;
+}
+/* Video */
+iframe {
+  display: block;
+  margin: 30px auto;
+}
+
+/* Pricing */
+
+#pricing {
+  display: flex;
+  width: 65%;
+  margin: 40px auto;
+}
+#pricing .box {
+  margin-right: 10px;
+
+  width: 33.33%;
+  border: 1px solid gray;
+  box-shadow: 1px 1px 1px gray;
+}
+#pricing .box:last-child {
+  margin-right: 0px;
+}
+
+#pricing h2 {
+  font-size: 17px;
+  background-color: rgba(128, 128, 128, 0.296);
+  padding: 10px;
+  text-align: center;
+}
+#pricing .content {
+  text-align: center;
+  padding: 20px;
+}
+#pricing .content p {
+  margin: 7px;
+}
+
+#pricing .content button {
+  background-color: goldenrod;
+  padding: 6px;
+  font-weight: bolder;
+  font-size: 14px;
+  border: none;
+  box-shadow: 2px 2px 2px;
+}
+
+#pricing .content button:hover {
+  background-color: rgb(211, 137, 0);
+  cursor: pointer;
+}
+
+/* footer */
+
+footer {
+  background-color: rgba(128, 128, 128, 0.296);
+  margin: 0px auto;
+  height: 80px;
+  width: 72%;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 20px;
+}
+
+footer .links a {
+  text-decoration: none;
+  color: black;
+  padding: 0px 15px;
+}
+footer .links a:hover {
+  color: goldenrod;
+}
+footer p {
+  margin-top: 7px;
+  font-size: 15px;
+}
+
+@media (max-width: 867px) {
+  header {
+    display: block;
+    height: auto;
+  }
+  header img {
+    display: block;
+    margin: 0px auto;
+  }
+  header nav {
+    width: 100%;
+    justify-content: center;
+  }
+  header nav a {
+    line-height: 30px;
+  }
+  #features .content .icon {
+    font-size: 35px;
+    margin-right: 20px;
+  }
+  #pricing {
+    width: 85%;
+  }
+}
+@media (max-width: 570px) {
+  header nav {
+    width: 100%;
+    justify-content: center;
+  }
+  header nav a {
+    padding: 10px;
+    line-height: 30px;
+  }
+  iframe {
+    width: fit-content;
+  }
+  #pricing {
+    width: 95%;
+  }
+}
